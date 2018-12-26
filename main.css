@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'New_Year';
+    src: url('./fonts/NewYearFont.otf');
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header { 
+    min-height: 100vh;
+    position: relative;
+}
+
+#canvas {
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+}
+
+.main-wrapper {
+    background-image: url('./img/bg.png')
+}
+
+.align-center {
+    text-align: center;
+}
+@keyframes blink{
+    0% {
+        color: white;
+    }
+    25%{
+        color: palevioletred
+    }
+    50%{
+        color: purple
+    }
+    75%{
+ color: red
+    }
+    100%{
+    color:blue
+    }
+}
+
+.header__description {
+    color:white;
+    font-family: 'New_Year';
+    padding-top: 120px;
+    font-size: 100px;
+    animation: blink 7s normal infinite;
+}
+
+.congrats {
+    color:red;
+    width: 40%; 
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.list {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none
+}
+li {
+    width: 340px;
+    margin:20px;
+}
+
+.list p {
+    color:white;
+}
+h2{
+color:slategrey;
+text-align: center
+}
